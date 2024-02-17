@@ -6,7 +6,7 @@ public class Person {
     private Vehicle vehicle;
 
     public Person() {
-        System.out.println("Created a Bean by Spring");
+        System.out.println("Created a Person by Spring");
     }
 
     public String getName() {
