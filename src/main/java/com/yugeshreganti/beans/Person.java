@@ -1,7 +1,6 @@
 package com.yugeshreganti.beans;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -11,7 +10,8 @@ public class Person {
 
     private Vehicle vehicle;
 
-    public Person() {
+    public Person(Vehicle vehicle) {
+        this.vehicle = vehicle;
         System.out.println("Created a Person by Spring");
     }
 
@@ -27,7 +27,6 @@ public class Person {
         return vehicle;
     }
 
-    @Autowired
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
