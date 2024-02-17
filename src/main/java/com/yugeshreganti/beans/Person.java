@@ -9,7 +9,7 @@ public class Person {
 
     private String name = "Yugesh";
 
-    @Autowired
+    @Autowired(required = false)
     private Vehicle vehicle;
 
     public Person() {

@@ -50,5 +50,6 @@ Follow these steps to set up and run the Spring security Learner Microservice:
 11. Autowired beans using method call
 12. Autowired beans using method parameters
 13. Autowired using @Autowired annotation on class fields
+14. Usage of @Autowired annotation with its parameter required set to false
 
 

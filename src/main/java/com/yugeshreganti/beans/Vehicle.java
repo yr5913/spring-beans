@@ -3,7 +3,7 @@ package com.yugeshreganti.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Vehicle {
 
     private String name = "Lambo";
