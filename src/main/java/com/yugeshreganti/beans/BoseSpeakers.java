@@ -5,4 +5,9 @@ public class BoseSpeakers implements Speakers {
     public void makeSound() {
         System.out.println("Playing music from Bose Speakers");
     }
+
+    @Override
+    public String toString() {
+        return "BoseSpeakers";
+    }
 }

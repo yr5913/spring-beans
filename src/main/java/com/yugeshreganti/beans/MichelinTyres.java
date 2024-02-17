@@ -5,4 +5,9 @@ public class MichelinTyres implements Tyres {
     public void rotate() {
         System.out.println("Michelin Tyres are rotating");
     }
+
+    @Override
+    public String toString() {
+        return "MichelinTyres{}";
+    }
 }

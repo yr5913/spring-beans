@@ -61,5 +61,7 @@ Follow these steps to set up and run the Spring security Learner Microservice:
 20. Usage of @Qualifier -- Also we can ge the custom bean we require from the multiple beans available by using
     Qualifier to mention the bean we need.
 21. Circular Dependency -- error is generated
-
+22. Implemented a Simple Project with these dependencies-- Person has a Vehicle, Vehicle uses Vehicle Services to Play
+    Music and run on Tyres, There are multiple music players, tyres and default ones should be configured
+23. Bean Scope - Singleton Pattern -- check Main class for the code
 
