@@ -47,6 +47,7 @@ Follow these steps to set up and run the Spring security Learner Microservice:
 8. Usage of @PreDestroy Annotation
 9. Usage of registerBean() Method
 10. Created Two different types of beans that has a relationship between them but didn't autowire them
-
+11. Autowired beans using method call
+12. Autowired beans using method parameters
 
 
