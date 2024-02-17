@@ -7,11 +7,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class SpringBeansMain {
     public static void main(String[] args) {
-
-
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ProjectConfig.class);
         Vehicle vehicle = applicationContext.getBean(Vehicle.class);
-        System.out.println(vehicle.getName());
-
+        System.out.println(vehicle);
     }
 }

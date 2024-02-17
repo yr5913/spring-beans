@@ -1,35 +1,12 @@
 package com.yugeshreganti.config;
 
 
-import com.yugeshreganti.beans.Vehicle;
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 
 @Configuration
+@ComponentScan(basePackages = "com.yugeshreganti.beans")
 public class ProjectConfig {
-    @Bean(name = "camry")
-    Vehicle vehicle1() {
-        var vehicle = new Vehicle();
-        vehicle.setName("Toyota Camry");
-        return vehicle;
-    }
-
-    @Bean(value = "lambo")
-    @Primary
-    Vehicle vehicle2() {
-        var vehicle = new Vehicle();
-        vehicle.setName("Lambo");
-        return vehicle;
-    }
-
-
-    @Bean("kona")
-    Vehicle vehicle3() {
-        var vehicle = new Vehicle();
-        vehicle.setName("Hyundai Kona");
-        return vehicle;
-    }
 
 
 }
