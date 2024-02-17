@@ -4,6 +4,7 @@ package com.yugeshreganti.config;
 import com.yugeshreganti.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ProjectConfig {
@@ -15,6 +16,7 @@ public class ProjectConfig {
     }
 
     @Bean(value = "lambo")
+    @Primary
     Vehicle vehicle2() {
         var vehicle = new Vehicle();
         vehicle.setName("Lambo");
