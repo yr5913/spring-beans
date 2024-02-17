@@ -57,5 +57,6 @@ Follow these steps to set up and run the Spring security Learner Microservice:
 17. Autowired using @Autowired annotation on constructor -- best practice
 18. Multiple beans, using @Autowired annotation on constructor where the parameter name doesn't match with any of
     the multiple beans -Error UnsatisfiedDependencyException
+19. Correct the above by defining on of the beans as primary
 
 
