@@ -11,7 +11,7 @@ public class Vehicle {
     private VehicleServices vehicleServices;
 
     public Vehicle() {
-        System.out.println("Vehicle created by Spring");
+
     }
 
     public String getName() {
