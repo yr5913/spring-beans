@@ -1,9 +1,14 @@
 package com.yugeshreganti.beans;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Vehicle {
 
     private String name;
+
+    @Autowired
+    private Person person;
 
     public Vehicle() {
         System.out.println("Vehicle created by Spring");
@@ -23,5 +28,13 @@ public class Vehicle {
         return "Vehicle{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }
