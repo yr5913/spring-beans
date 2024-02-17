@@ -1,8 +1,12 @@
 package com.yugeshreganti.beans;
 
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class Vehicle {
 
-    private String name;
+    private String name = "Lambo";
 
     public Vehicle() {
         System.out.println("Vehicle created by Spring");
