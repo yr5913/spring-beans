@@ -10,8 +10,8 @@ public class SpringBeansMain {
 
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        Vehicle vehicle = applicationContext.getBean(Vehicle.class);
-        System.out.println(vehicle);
+        Vehicle vehicle = applicationContext.getBean("vehicle1", Vehicle.class);
+        System.out.println(vehicle.getName());
 
     }
 }
