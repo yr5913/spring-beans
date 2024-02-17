@@ -1,6 +1,7 @@
 # SpringBeans
 
-This project works on different techniques of creating Spring Beans and autowiring them. Please look through the commit
+This project works on different techniques of creating Spring Beans and autowiring them and also working with Qualifier
+and Scope of the Beans. Please look through the commit
 history section below for changes in each iteration. Each iteration shows different types of creating beans and working
 with them
 
