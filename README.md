@@ -54,5 +54,6 @@ Follow these steps to set up and run the Spring security Learner Microservice:
 15. Autowired using @Autowired annotation on setter method
 16. Autowired without using @Autowired annotation anywhere -- by default spring does the constructor autowiring if there
     is only one constructor
+17. Autowired using @Autowired annotation on constructor -- best practice
 
 

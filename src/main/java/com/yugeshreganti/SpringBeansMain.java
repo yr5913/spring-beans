@@ -9,8 +9,8 @@ public class SpringBeansMain {
     public static void main(String[] args) {
         var applicationContext = new AnnotationConfigApplicationContext(ProjectConfig.class);
         Person person = applicationContext.getBean(Person.class);
-       // Vehicle vehicle = applicationContext.getBean(Vehicle.class);
+       Vehicle vehicle = applicationContext.getBean(Vehicle.class);
         System.out.println("Person details are: " + person);
-        //System.out.println("Vehicle details are: " + vehicle);
+        System.out.println("Vehicle details are: " + vehicle);
     }
 }
