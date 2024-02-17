@@ -63,6 +63,8 @@ Follow these steps to set up and run the Spring security Learner Microservice:
 21. Circular Dependency -- error is generated
 22. Implemented a Simple Project with these dependencies-- Person has a Vehicle, Vehicle uses Vehicle Services to Play
     Music and run on Tyres, There are multiple music players, tyres and default ones should be configured
-23. Bean Scope - Singleton Pattern -- check Main class for the code
+23. Bean Scope - Singleton Pattern - check Main class for the code
 24. Testing the default Eager initialization by Spring
+25. Testing the Lazy initialization by Spring
+26. Bean Scope - Prototype Pattern - check Main class for the code
 
