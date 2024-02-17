@@ -1,7 +1,7 @@
 package com.yugeshreganti.config;
 
 
-import com.yugeshreganti.beans.Vehicle;
+import com.yugeshreganti.beans.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -31,5 +31,28 @@ public class ProjectConfig {
         veh.setName("Kona");
         return veh;
     }
+
+    @Bean
+    @Primary
+    Tyres tyre1() {
+        return new BridgeStoneTyres();
+    }
+
+    @Bean
+    Tyres tyre2() {
+        return new MichelinTyres();
+    }
+
+    @Bean
+    Speakers speakers1() {
+        return new SonySpeakers();
+    }
+
+    @Bean
+    @Primary
+    Speakers speakers2() {
+        return new BoseSpeakers();
+    }
+
 
 }

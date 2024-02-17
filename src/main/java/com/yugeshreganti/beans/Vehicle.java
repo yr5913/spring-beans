@@ -8,7 +8,7 @@ public class Vehicle {
     private String name;
 
     @Autowired
-    private Person person;
+    private VehicleServices vehicleServices;
 
     public Vehicle() {
         System.out.println("Vehicle created by Spring");
@@ -22,19 +22,19 @@ public class Vehicle {
         this.name = name;
     }
 
+    public VehicleServices getVehicleServices() {
+        return vehicleServices;
+    }
+
+    public void setVehicleServices(VehicleServices vehicleServices) {
+        this.vehicleServices = vehicleServices;
+    }
 
     @Override
     public String toString() {
         return "Vehicle{" +
                 "name='" + name + '\'' +
+                ", vehicleServices=" + vehicleServices +
                 '}';
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
     }
 }
