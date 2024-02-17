@@ -2,6 +2,7 @@ package com.yugeshreganti.beans;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,7 +13,7 @@ public class Person {
     private Vehicle vehicle;
 
     @Autowired
-    public Person(Vehicle vehicle) {
+    public Person(@Qualifier("vehicle2") Vehicle vehicle) {
         this.vehicle = vehicle;
         System.out.println("Created a Person by Spring");
     }

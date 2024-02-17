@@ -58,5 +58,7 @@ Follow these steps to set up and run the Spring security Learner Microservice:
 18. Multiple beans, using @Autowired annotation on constructor where the parameter name doesn't match with any of
     the multiple beans -Error UnsatisfiedDependencyException
 19. Correct the above by defining on of the beans as primary
+20. Usage of @Qualifier -- Also we can ge the custom bean we require from the multiple beans available by using
+    Qualifier to mention the bean we need.
 
 
